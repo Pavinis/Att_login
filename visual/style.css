@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(212, 212, 212);
+}
+
+container {
+    display:flex;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    min-width: none;
+}
+
+form {
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    padding:40px;
+    margin: 0 0 0 0;
+}
+
+.row {
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+
+.column {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+}
+
+.nomeLabel {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:60px;
+    background-color: transparent;
+    border-top-width: 4px;
+    border-color:rgb(118, 118, 118);
+    text-align: center;
+    margin: 0;
+    padding:20px;
+}
+
+.senhaLabel {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:60px;
+    background-color: transparent;
+    border-top-width: 4px;
+    border-color:rgb(118, 118, 118);
+    text-align: center;
+    margin:40px 0 0 0;
+    padding:20px;
+}
+
+#nome {
+    width: 600px;
+    height:60px;
+    margin:0 0 0 20;
+}
+
+#senha {
+    width: 600px;
+    height:60px;
+    margin:40px 0 0 20;
+}
+
+#entrar {
+    width: 730px;
+    height:60px;
+    margin:40px 0 0 0;
+}

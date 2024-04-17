@@ -1,0 +1,42 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" type="imagex/png" href="visual/imagens/TriVer.png" sizes="32x32">
+        <title>Atividade Login</title>
+        <link rel="stylesheet" href="visual/style.css">
+    </head>
+
+    <script src="script/script.js"></script>
+
+    <body>
+        <container>
+            <div class="column">
+                <div class="row">
+                    <img src="visual/imagens/TriVer.png">
+                </div>
+                <form method="post" action="#">
+                    <div class="row">
+                        <div class="column">
+                            <div class="nomeLabel">
+                                <p>Nome:</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <input type="text" id="nome" required></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div clas="column">
+                            <div class="senhaLabel">
+                                <p>Senha:</p>
+                            </div>
+                        </div>
+                        <input type="password" id="senha" required></input>
+                    </div>
+                    <div class="row">
+                        <button type="button" id="entrar" onclick="logarConta()">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </container>
+    </body>
