@@ -11,25 +11,30 @@ function logarConta() {
         window.location.href = "outra.html";
     } else {
         if (usuIndex === -1) {
-            alert("Usuário incorreto.\nDesculpe! bah! tchê!");
+            alert("Usuário incorreto.\nDesculpe! ma que bah!... tchê!");
         } else {
             alert("Senha incorreta.\nDesculpe! ma que bah!... tchê!");
         }
-    }
-}
+    };
+};
 
-//Diz que usuario acessou e compoe a lista de usuarios existentes
+//Compoe a lista de usuarios existentes na página "outra.html"
 function outra(){
     let i = 0;
     let lista = "";
 
-    for(i = 0; i < usuarioNome.length; i + 1) {
+    while (i < usuarioNome.length) {
         lista = (lista + usuarioNome[i]);
-        lista = (lista + " ");
+        lista = (lista + " (");
         lista = (lista + usuarioSenha[i]);
-        lista = (lista + ", ");
-    }
+        lista = (lista + ")");
+        if (i !== usuarioNome.length - 1) {
+            lista = (lista + ", ");
+        } else{
+            lista = (lista + ".");
+        }
+        i = i + 1;
+    };
 
     document.getElementById('lista').innerHTML = (lista);
-    console.log(lista);
-}
+};
